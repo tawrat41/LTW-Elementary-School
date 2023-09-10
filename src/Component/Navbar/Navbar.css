@@ -1,0 +1,14 @@
+#school-nav{
+    background-color: #00a44b;
+    
+}
+
+Navbr.brand{
+    color: white;
+}
+
+#header-image{
+    objectFit: cover; 
+    width: 100%; 
+    height: 92vh;
+}

@@ -1,0 +1,51 @@
+/* Header.css */
+
+/* Container for the header image */
+.header-container {
+    position: relative;
+  }
+  
+  /* Styles for the header image */
+  #header-image {
+    width: 100%;
+  }
+  
+  /* Gradient overlay */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), #003d1c);
+  }
+  
+  /* Styles for the text container */
+  .text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    text-align: center;
+    color: white;
+  }
+  
+  /* Styles for the header logo */
+  #header-logo {
+    width: 30%; 
+    height: auto;
+    margin-bottom: 10px; /* Add space below the logo */
+    margin-bottom: 5%;
+  }
+  
+  /* Styles for the headings */
+  h2 {
+    /* font-size: 2.5em; */
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    /* font-size: 3em; */
+    margin: 0;
+  }
+  
