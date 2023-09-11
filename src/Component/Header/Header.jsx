@@ -5,7 +5,7 @@ import './Header.css'; // Import your CSS file
 const Header = () => {
   return (
     <div className="header-container">
-      <img id="header-image" src="src/media/school.jpg" alt="Header" />
+      <img id="header-image" src="src/media/ltw-school.jpg" alt="Header" />
       <div className="overlay"></div>
       <div className="text-container">
         <img id="header-logo" src="src/media/logo.png" alt="Logo" />
