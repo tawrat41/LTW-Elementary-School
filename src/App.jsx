@@ -8,6 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Component/Header/Header";
 import AboutUS from "./Component/AboutUS/AboutUS";
 import Classroom from "./Component/Classroom/Classroom";
+import ControlledCarousel from "./Component/Classroom/Classroom";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       <CollapsibleExample></CollapsibleExample>
       <Header></Header>
       <AboutUS></AboutUS>
-      <Classroom></Classroom>
+      {/* <Classroom></Classroom> */}
+      <ControlledCarousel></ControlledCarousel>
     </>
   );
 }

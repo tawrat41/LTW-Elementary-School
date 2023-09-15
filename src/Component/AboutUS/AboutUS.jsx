@@ -14,6 +14,6 @@ const AboutUS = () => {
             </Row>
         </Container>
     );  
-};
+};  
 
 export default AboutUS;

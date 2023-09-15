@@ -1,53 +1,57 @@
-/* eslint-disable no-unused-vars */
-import React from "react";
+import { useState } from "react";
+import { Row } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
+import "./Classroom.css";
 
-const Classroom = () => {
+function ControlledCarousel() {
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex) => {
+    setIndex(selectedIndex);
+  };
+
   return (
-    <>
-      <div
-        id="carouselExampleControls"
-        className="carousel slide"
-        data-ride="carousel"
-      >
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img className="d-block w-100" src="/src/media/c1.jfif" alt="First slide" />
-          </div>
-          <div className="carousel-item">
-            <img className="d-block w-100" src="/src/media/c2.jfif" alt="Second slide" />
-          </div>
-          <div className="carousel-item">
-            <img className="d-block w-100" src="/src/media/c3.jfif" alt="Third slide" />
-          </div>
-        </div>
-        <a
-          className="carousel-control-prev"
-          href="#carouselExampleControls"
-          role="button"
-          data-slide="prev"
-        >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="sr-only">Previous</span>
-        </a>
-        <a
-          className="carousel-control-next"
-          href="#carouselExampleControls"
-          role="button"
-          data-slide="next"
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="sr-only">Next</span>
-        </a>
-      </div>
-    </>
+    <div className="container p-5" id="classroom-div">
+      <Row>
+      <h1 className='text-center align-items-center p-5'>Our Classroom</h1>
+        <Carousel fade activeIndex={index} onSelect={handleSelect}>
+          <Carousel.Item interval={2000}>
+            {/* <ExampleCarouselImage text="First slide" /> */}
+            <div className="classroom-overlay">
+              <img src="/src/media/c1.jfif" alt="" />
+            </div>
+            <Carousel.Caption>
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item interval={2000}>
+            {/* <ExampleCarouselImage text="Second slide" /> */}
+            <div className="classroom-overlay">
+              <img src="/src/media/c2.jfif" alt="" />
+            </div>
+            <Carousel.Caption>
+              <h3>Second slide label</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item interval={2000}>
+            {/* <ExampleCarouselImage text="Third slide" /> */}
+            <div className="classroom-overlay">
+              <img src="/src/media/c3.jfif" alt="" />
+            </div>
+            <Carousel.Caption>
+              <h3>Third slide label</h3>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              </p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          
+        </Carousel>
+      </Row>
+    </div>
   );
-};
+}
 
-export default Classroom;
+export default ControlledCarousel;
