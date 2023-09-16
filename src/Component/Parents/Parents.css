@@ -1,0 +1,20 @@
+
+#testimionial-div-saying{
+    background-image: linear-gradient(to bottom right, #00863c, #00863c98);
+    border: 1px solid #00863c;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    box-shadow: 2px 2px 5px #00863c;
+    font-style: italic;
+    text-align: justify;
+}
+
+#inverted-comma{
+    color: #1d3829;
+}
+
+#rating-star{
+    color: #00a44b;
+}
+

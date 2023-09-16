@@ -10,6 +10,7 @@ import AboutUS from "./Component/AboutUS/AboutUS";
 import Classroom from "./Component/Classroom/Classroom";
 import ControlledCarousel from "./Component/Classroom/Classroom";
 import Teachers from "./Component/Teachers/Teachers";
+import Parents from "./Component/Parents/Parents";
 
 function App() {
   return (
@@ -17,9 +18,9 @@ function App() {
       <CollapsibleExample></CollapsibleExample>
       <Header></Header>
       <AboutUS></AboutUS>
-      {/* <Classroom></Classroom> */}
       <ControlledCarousel></ControlledCarousel>
       <Teachers></Teachers>
+      <Parents></Parents>
     </>
   );
 }

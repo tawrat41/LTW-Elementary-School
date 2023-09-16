@@ -7,7 +7,7 @@ import './Navbar.css'
 
 function CollapsibleExample() {
   return (
-    <Navbar collapseOnSelect expand="lg" className="sticky-top" id="school-nav">
+    <Navbar collapseOnSelect expand="lg" className="sticky-top py-3" id="school-nav">
       <Container>
         <Navbar.Brand href="#home" className="text-light">LEAD THE WAY Elementary School</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
