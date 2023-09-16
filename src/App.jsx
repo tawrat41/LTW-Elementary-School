@@ -12,6 +12,7 @@ import ControlledCarousel from "./Component/Classroom/Classroom";
 import Teachers from "./Component/Teachers/Teachers";
 import Parents from "./Component/Parents/Parents";
 import Admission from "./Component/Admission/Admission";
+import Footer from "./Component/Footer/Footer";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Teachers></Teachers>
       <Parents></Parents>
       <Admission></Admission>
+      <Footer></Footer>
     </>
   );
 }
