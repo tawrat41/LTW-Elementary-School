@@ -11,6 +11,7 @@ import Classroom from "./Component/Classroom/Classroom";
 import ControlledCarousel from "./Component/Classroom/Classroom";
 import Teachers from "./Component/Teachers/Teachers";
 import Parents from "./Component/Parents/Parents";
+import Admission from "./Component/Admission/Admission";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <ControlledCarousel></ControlledCarousel>
       <Teachers></Teachers>
       <Parents></Parents>
+      <Admission></Admission>
     </>
   );
 }
