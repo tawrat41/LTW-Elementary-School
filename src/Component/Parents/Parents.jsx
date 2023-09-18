@@ -5,7 +5,7 @@ import "./Parents.css";
 
 const Parents = () => {
   return (
-    <div className="my-5">
+    <div className="my-5 py-5">
       <h1 className="text-center my-5">What Parents Say!</h1>
       <Carousel className="container my-5" id="parent-carousel">
         <Carousel.Item interval={50000}>

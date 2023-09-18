@@ -3,22 +3,22 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 // import NavDropdown from 'react-bootstrap/NavDropdown';
 import './Navbar.css'
-import { Button } from 'react-bootstrap';
+import { Button, Image } from 'react-bootstrap';
 
 
 function CollapsibleExample() {
   return (
     <Navbar collapseOnSelect expand="lg" className="sticky-top py-3" id="school-nav">
       <Container>
-        <Navbar.Brand href="#home" className="text-light">LEAD THE WAY Elementary School</Navbar.Brand>
+        <Navbar.Brand href="#home" id='nav-brand' className="text-success"><Image src='/src/media/logo.png' width={60} className='mx-3'></Image> LEAD THE WAY</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home" className="text-light">Home</Nav.Link>
-            <Nav.Link href="#AboutUS"  className="text-light">About US</Nav.Link>
-            <Nav.Link href="#classroom" className="text-light">Classroom</Nav.Link>
-            <Nav.Link href="#teachers" className="text-light">Teachers</Nav.Link>
-            <Nav.Link href="#contact" className="text-light">Contact</Nav.Link>
+            <Nav.Link id='nav-item' href="#home" className="text-success">Home</Nav.Link>
+            <Nav.Link id='nav-item' href="#AboutUS"  className="text-success">About US</Nav.Link>
+            <Nav.Link id='nav-item' href="#classroom" className="text-success">Classroom</Nav.Link>
+            <Nav.Link id='nav-item' href="#teachers" className="text-success">Teachers</Nav.Link>
+            <Nav.Link id='nav-item' href="#contact" className="text-success">Contact</Nav.Link>
             {/* <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
@@ -31,7 +31,7 @@ function CollapsibleExample() {
               </NavDropdown.Item>
             </NavDropdown> */}
           </Nav>
-          <Button className='btn btn-success'>Admission</Button>
+          <Button className='btn btn-success mx-2'>Admission</Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>

@@ -6,6 +6,16 @@
 .classroom-overlay {
     position: relative;
     display: inline-block;
+    
+
+  }
+#carousel-div{
+  border-radius: 12px;
+
+}
+#classroom-image{
+    /* border: 5px solid blue; */
+    border-radius: 12px;
   }
   
   .classroom-overlay::before {
@@ -15,5 +25,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1));
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)); */
   }
+/* #classroom-div{
+  background-image: url(/src//media/header-bg.png);
+  background-size: cover;
+} */
