@@ -1,16 +1,47 @@
+/* eslint-disable no-unused-vars */
+// Import necessary dependencies
+import React, { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-// import NavDropdown from 'react-bootstrap/NavDropdown';
-import './Navbar.css'
 import { Button, Image } from 'react-bootstrap';
-
+import './Navbar.css';
 
 function CollapsibleExample() {
+  // Define state variables to track scroll position and navbar style
+  const [scrolled, setScrolled] = useState(false);
+
+  // Add an event listener to handle scroll events
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    // Attach the event listener when the component mounts
+    window.addEventListener('scroll', handleScroll);
+
+    // Remove the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <Navbar collapseOnSelect expand="lg" className="sticky-top py-3" id="school-nav">
+    <Navbar
+      collapseOnSelect
+      expand="lg"
+      className={`sticky-top py-3 ${scrolled ? 'scrolled' : ''}`}
+      id="school-nav"
+    >
       <Container>
-        <Navbar.Brand href="#home" id='nav-brand' className="text-success"><Image src='/src/media/logo.png' width={60} className='mx-3'></Image> LEAD THE WAY</Navbar.Brand>
+        <Navbar.Brand href="#home" id="nav-brand" className="text-success">
+          <Image id='nav-brand-img' src='/src/media/logo.png' width={60} className='mx-3' alt="Logo" />
+          LEAD THE WAY
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
@@ -19,19 +50,8 @@ function CollapsibleExample() {
             <Nav.Link id='nav-item' href="#classroom" className="text-success">Classroom</Nav.Link>
             <Nav.Link id='nav-item' href="#teachers" className="text-success">Teachers</Nav.Link>
             <Nav.Link id='nav-item' href="#contact" className="text-success">Contact</Nav.Link>
-            {/* <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown> */}
+            <Button id='nav-btn' className='btn btn-success mx-2'>Admission</Button>
           </Nav>
-          <Button className='btn btn-success mx-2'>Admission</Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>
