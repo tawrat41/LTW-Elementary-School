@@ -34,7 +34,7 @@ function CollapsibleExample() {
     <Navbar
       collapseOnSelect
       expand="lg"
-      className={`sticky-top py-3 ${scrolled ? 'scrolled' : ''}`}
+      className={`sticky-top ${scrolled ? 'scrolled' : ''}`}
       id="school-nav"
     >
       <Container>

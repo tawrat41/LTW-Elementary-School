@@ -1,4 +1,4 @@
-#about-us-section p{
+#about-us-section p {
     text-align: justify;
 }
 
@@ -6,3 +6,23 @@
     background-image: url('/src/media/div_bg.png');
     background-size: cover;
 } */
+.about-us-section.left {
+    opacity: 0;
+    transform: translateX(-70px); /* Initial position off-screen */
+  }
+  
+  .about-us-section.left.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .about-us-section.right {
+    opacity: 0;
+    transform: translateX(70px); /* Initial position off-screen */
+  }
+  
+  .about-us-section.right.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
