@@ -51,9 +51,9 @@ function ControlledCarousel() {
       >
         <motion.Col
           className={`my-5 ${isVisible ? "visible" : ""}`}
-          initial={{ opacity: 0, x: "-50px" }}
-          animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: "-50px" }}
-          transition={{ duration: 0.8 }}
+          initial={{ opacity: 0, x: "-70px" }}
+          animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: "-70px" }}
+          transition={{ duration: 1 }}
         >
           <Carousel activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item interval={2000}>

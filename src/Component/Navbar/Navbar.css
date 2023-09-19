@@ -1,18 +1,18 @@
-#school-nav{
+#school-nav {
     background-color: white;
     box-shadow: 0px 1px 20px white;
     color: #00a44b;
-    transition: background-color 0.5s ease, box-shadow 0.5s ease, color 0.5s ease;
-    
+    transition: background-color 1s ease, box-shadow 1s ease, color 1s ease;
+
 }
 
-#nav-brand{
-    font-size:xx-large;
+#nav-brand {
+    font-size: xx-large;
     font-weight: 700;
 }
 
-#nav-item{
-    font-size:larger;
+#nav-item {
+    font-size: larger;
     font-weight: 700;
 }
 
@@ -25,17 +25,52 @@
     color: white !important;
 }
 
-#school-nav.scrolled #nav-btn{
+#school-nav.scrolled #nav-btn {
     background-color: white;
     color: #00a44b;
 }
 
-#school-nav.scrolled #nav-brand-img{
+#school-nav.scrolled #nav-brand-img {
     background-color: white;
 }
 
+/* hovering effect */
+
+#nav-item {
+    font-size: larger;
+    font-weight: 700;
+    position: relative;
+  }
+  
+  #nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #00a44b;
+    transition: width 0.3s ease;
+  }
+  
+  #nav-item:hover::after {
+    width: 110%;
+  }
+  
+  #school-nav.scrolled #nav-item::after {
+    background-color: white;
+  }
+  
+  #school-nav.scrolled #nav-item:hover::after {
+    background-color: #00a44b;
+  }
 
 
-/* .navbar-toggler-icon {
-    background: #00a44b;
-} */
+  #school-nav.scrolled #nav-item::after {
+    background-color: #00a44b;
+  }
+  
+  #school-nav.scrolled #nav-item:hover::after {
+    background-color: white;
+  }
