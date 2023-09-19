@@ -4,8 +4,9 @@ import { Col, Container, Image, Row } from 'react-bootstrap';
 
 const Teachers = () => {
     return (
-        <Container className='py-5 my-5'>
+        <Container className='py-5 my-5' id='our-teachers'>
             <Row className='mt-5'>
+                <h5 className='text-center'>INSTRUCTOR</h5>
                 <h1 className='text-center'>Our Teachers</h1>
             </Row>
             <Row xs={1} md={2} lg={4} className='d-flex justify-content-around align-items-center mb-5'>

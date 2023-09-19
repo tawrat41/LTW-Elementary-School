@@ -5,3 +5,16 @@
 #admission-image{
     border-radius: 12px;
 }
+#call-us {
+    border: 0;
+    padding: 2% 5%;
+    font-weight: 700;
+    border-radius: 30px;
+    transition: max-width 0.3s ease-in-out; /* Changed transition property to max-width */
+    max-width: 100%; /* Set the initial max-width */
+}
+
+#call-us:hover {
+    max-width: 50%; /* Set the max-width on hover */
+    border-radius: 30px;
+}

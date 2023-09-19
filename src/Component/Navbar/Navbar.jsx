@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Button, Image } from 'react-bootstrap';
+import { Link as ScrollLink, Element } from 'react-scroll'; // Import ScrollLink and Element
 import './Navbar.css';
 
 function CollapsibleExample() {
@@ -44,12 +45,25 @@ function CollapsibleExample() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link id='nav-item' href="#home" className="text-success">Home</Nav.Link>
-            <Nav.Link id='nav-item' href="#AboutUS"  className="text-success">About US</Nav.Link>
-            <Nav.Link id='nav-item' href="#classroom" className="text-success">Classroom</Nav.Link>
-            <Nav.Link id='nav-item' href="#teachers" className="text-success">Teachers</Nav.Link>
-            <Nav.Link id='nav-item' href="#contact" className="text-success">Contact</Nav.Link>
-            <Button id='nav-btn' className='btn btn-success mx-2'>Admission</Button>
+            <ScrollLink to="banner" spy={true} smooth={true} offset={-100} duration={300}  activeClass="active-link">
+              <Nav.Link id='nav-item' className="text-success">Home</Nav.Link>
+            </ScrollLink>
+            <ScrollLink to="about-us" spy={true} smooth={true} offset={-100} duration={300}  activeClass="active-link">
+              <Nav.Link id='nav-item' className="text-success">About US</Nav.Link>
+            </ScrollLink>
+            <ScrollLink to="our-classroom" spy={true} smooth={true} offset={-60} duration={300}  activeClass="active-link">
+              <Nav.Link id='nav-item' className="text-success">Classroom</Nav.Link>
+            </ScrollLink>
+            <ScrollLink to="our-teachers" spy={true} smooth={true} offset={-50} duration={300}  activeClass="active-link">
+              <Nav.Link id='nav-item' className="text-success">Teachers</Nav.Link>
+            </ScrollLink>
+            <ScrollLink to="contact" spy={true} smooth={true} offset={-50} duration={300}  activeClass="active-link">
+              <Nav.Link id='nav-item' className="text-success">Contact</Nav.Link>
+            </ScrollLink>
+            <ScrollLink to="get-admission" spy={true} smooth={true} offset={-70} duration={300}  activeClass="active-link">
+              <Nav.Link><Button id='nav-btn' className='btn btn-success mx-2'>Admission</Button></Nav.Link>
+            </ScrollLink>
+            
           </Nav>
         </Navbar.Collapse>
       </Container>

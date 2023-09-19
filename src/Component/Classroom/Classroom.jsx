@@ -43,7 +43,7 @@ function ControlledCarousel() {
       className={`p-5 ${isVisible ? "visible" : ""}`}
       id="classroom-div"
     >
-      <Row
+      <Row id='our-classroom'
         xs={1}
         md={1}
         lg={2}
@@ -115,6 +115,7 @@ function ControlledCarousel() {
           animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: "70px" }}
           transition={{ duration: 1 }}
         >
+          <h5 className="text-center">ENVIRONMENT</h5>
           <h1 className="text-center align-items-center">Our Classroom</h1>
           <p className="m-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ratione accusantium maxime ullam debitis sunt eum delectus non voluptas quos, a voluptatibus laudantium reiciendis natus tempore minima ex exercitationem placeat.</p>
         </motion.Col>

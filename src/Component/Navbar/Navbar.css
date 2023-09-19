@@ -74,3 +74,9 @@
   #school-nav.scrolled #nav-item:hover::after {
     background-color: white;
   }
+
+  .active-link {
+    color: white; /* Set the desired color for the active link */
+    /* Add any additional styles you want for the active link */
+    
+  }
