@@ -39,7 +39,7 @@ function CollapsibleExample() {
     >
       <Container>
         <Navbar.Brand href="#home" id="nav-brand" className="text-success">
-          <Image id='nav-brand-img' src='/src/media/logo.png' width={60} className='mx-3' alt="Logo" />
+          <Image id='nav-brand-img' src='/media/logo.png' width={60} className='mx-3' alt="Logo" />
           LEAD THE WAY
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
