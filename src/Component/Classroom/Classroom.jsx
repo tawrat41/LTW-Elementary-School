@@ -61,7 +61,7 @@ function ControlledCarousel() {
               <div className="classroom-overlay">
                 <Image
                   id="classroom-image"
-                  src="/src/media/c1.jfif"
+                  src="/media/c1.jfif"
                   alt=""
                   fluid
                 />
@@ -78,7 +78,7 @@ function ControlledCarousel() {
               <div className="classroom-overlay">
                 <Image
                   id="classroom-image"
-                  src="/src/media/c2.jfif"
+                  src="/media/c2.jfif"
                   alt=""
                   fluid
                 />
@@ -93,7 +93,7 @@ function ControlledCarousel() {
               <div className="classroom-overlay">
                 <Image
                   id="classroom-image"
-                  src="/src/media/c3.jfif"
+                  src="/media/c3.jfif"
                   alt=""
                   fluid
                 />

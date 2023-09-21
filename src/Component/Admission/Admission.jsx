@@ -13,7 +13,7 @@ const Admission = () => {
                     <Button id='call-us' className='btn btn-success'>CAll US!</Button>
                 </Col>
                 <Col  className='my-5'>
-                    <Image id='admission-image' src='/src/media/admission.jpg' fluid></Image>
+                    <Image id='admission-image' src='/media/admission.jpg' fluid></Image>
                 </Col>
             </Row>
         </Container>

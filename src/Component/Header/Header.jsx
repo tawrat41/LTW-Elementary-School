@@ -23,7 +23,7 @@ const Header = () => {
       </Col>
 
       <Col className="mt-5 px-5">
-        <Image src="/src/media/banner.png" width={700}></Image>
+        <Image src="/media/banner.png" width={700}></Image>
       </Col>
     </Row>
     </div>

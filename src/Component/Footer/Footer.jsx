@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="col-lg-6 offset-lg-3">
             <div className="contact-content text-center">
               <a href="#">
-                <img src="/src/media/logo.png" alt="logo" />
+                <img src="/media/logo.png" alt="logo" />
               </a>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

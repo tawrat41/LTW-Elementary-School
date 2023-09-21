@@ -16,7 +16,7 @@ const Parents = () => {
                 <div className="d-flex justify-content-center p-2 my-5">
                   <div className="px-3">
                     <Figure.Image
-                      src="/src/media/t-1.png"
+                      src="/media/t-1.png"
                       width={60}
                       height={60}
                     ></Figure.Image>
@@ -49,7 +49,7 @@ const Parents = () => {
                 <div className="d-flex justify-content-center p-2 my-5">
                   <div className="px-3">
                     <Figure.Image
-                      src="/src/media/t-1.png"
+                      src="/media/t-1.png"
                       width={60}
                       height={60}
                     ></Figure.Image>
@@ -82,7 +82,7 @@ const Parents = () => {
                 <div className="d-flex justify-content-center p-2 my-5">
                   <div className="px-3">
                     <Figure.Image
-                      src="/src/media/t-1.png"
+                      src="/media/t-1.png"
                       width={60}
                       height={60}
                     ></Figure.Image>
@@ -119,7 +119,7 @@ const Parents = () => {
                 <div className="d-flex justify-content-center p-2 my-5">
                   <div className="px-3">
                     <Figure.Image
-                      src="/src/media/t-1.png"
+                      src="/media/t-1.png"
                       width={60}
                       height={60}
                     ></Figure.Image>
@@ -152,7 +152,7 @@ const Parents = () => {
                 <div className="d-flex justify-content-center p-2 my-5">
                   <div className="px-3">
                     <Figure.Image
-                      src="/src/media/t-1.png"
+                      src="/media/t-1.png"
                       width={60}
                       height={60}
                     ></Figure.Image>
@@ -185,7 +185,7 @@ const Parents = () => {
                 <div className="d-flex justify-content-center p-2 my-5">
                   <div className="px-3">
                     <Figure.Image
-                      src="/src/media/t-1.png"
+                      src="/media/t-1.png"
                       width={60}
                       height={60}
                     ></Figure.Image>

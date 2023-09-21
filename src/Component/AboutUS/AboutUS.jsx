@@ -59,7 +59,7 @@ const AboutUS = () => {
             animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: '50px' }}
             transition={{ duration: 1 }}
           >
-            <Image src="/src/media/ltw-school.jpg" rounded />
+            <Image src="/media/ltw-school.jpg" rounded />
           </motion.div>
         </Col>
       </Row>
