@@ -13,6 +13,8 @@ import Teachers from "./Component/Teachers/Teachers";
 import Parents from "./Component/Parents/Parents";
 import Admission from "./Component/Admission/Admission";
 import Footer from "./Component/Footer/Footer";
+import { ImageList } from "@mui/material";
+import Library from "./Component/Library/Library";
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
       <Teachers></Teachers>
       <Parents></Parents>
       <Admission></Admission>
+      <Library></Library>
       <Footer></Footer>
     </>
   );

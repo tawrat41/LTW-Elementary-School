@@ -37,8 +37,8 @@ const AboutUS = () => {
         <Col id="about-us-section" className={`my-5 about-us-section left ${isVisible ? "visible" : ""}`}>
           <motion.h1
             className="text-center align-items-center my-2"
-            initial={{ opacity: 0, x: '-50px' }}
-            animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: '-50px' }}
+            initial={{ opacity: 0, x: '-70px' }}
+            animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: '-70px' }}
             transition={{ duration: 1 }}
           >
             <h5 className="text-center">ABOUT US</h5>
@@ -46,8 +46,8 @@ const AboutUS = () => {
           </motion.h1>
           <motion.p
             className="m-4"
-            initial={{ opacity: 0, x: '-50px' }}
-            animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: '-50px' }}
+            initial={{ opacity: 0, x: '-70px' }}
+            animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: '-70px' }}
             transition={{ duration: 1, delay: 0.3 }}
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsam consequatur minus? Inventore eum velit ex ipsam cum? Nulla voluptatibus odit animi ea quo eveniet nam magnam necessitatibus at cumque.
@@ -55,8 +55,8 @@ const AboutUS = () => {
         </Col>
         <Col id="about-us-section" className={`my-5 about-us-section right ${isVisible ? "visible" : ""}`}>
           <motion.div
-            initial={{ opacity: 0, x: '50px' }}
-            animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: '50px' }}
+            initial={{ opacity: 0, x: '70px' }}
+            animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: '70px' }}
             transition={{ duration: 1 }}
           >
             <Image src="/media/ltw-school.jpg" rounded />
