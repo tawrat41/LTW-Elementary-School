@@ -47,7 +47,7 @@ function ControlledCarousel() {
         xs={1}
         md={1}
         lg={2}
-        className="container d-flex justify-content-center align-items-center mx-auto my-5 py-5"
+        className="container d-flex justify-content-center align-items-center mx-auto py-5"
       >
         <motion.Col
           className={`my-5 ${isVisible ? "visible" : ""}`}
