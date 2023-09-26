@@ -49,7 +49,7 @@ const Parents = () => {
         What do our Parents say?
       </motion.h1>
       <Carousel className="container my-5" id="parent-carousel">
-        <Carousel.Item interval={50000}>
+        <Carousel.Item interval={5000}>
           <Row xs={1} md={1} lg={3}>
             <Col>
               <motion.div
@@ -177,7 +177,7 @@ const Parents = () => {
             {/* Add similar motion.div elements for other testimonials */}
           </Row>
         </Carousel.Item>
-        <Carousel.Item interval={50000}>
+        <Carousel.Item interval={5000}>
           <Row xs={1} md={1} lg={3}>
             <Col>
               <motion.div

@@ -4,6 +4,7 @@ import { Col, Image, Row } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 import { motion } from "framer-motion"; // Add this import
 import "./Classroom.css";
+import { Hidden } from "@mui/material";
 
 function ControlledCarousel() {
   const [index, setIndex] = useState(0);
